@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="WordPuzzleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-04-22T15:37:18" hostname="epicodus-67.local" time="0.003">
+<testsuite name="WordPuzzleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-04-22T16:20:57" hostname="epicodus-67.local" time="0.003">
   <properties/>
-  <testcase name="wordPuzzlerizer_acceptingInput_String" classname="WordPuzzleTest" time="0.003"/>
-  <system-out><![CDATA[Accept input: word
-Accept input: word
+  <testcase name="wordPuzzlerizer_inputStringToArray_Arraylist" classname="WordPuzzleTest" time="0.003"/>
+  <system-out><![CDATA[ArrayString: [word]
+ArrayString: [word]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

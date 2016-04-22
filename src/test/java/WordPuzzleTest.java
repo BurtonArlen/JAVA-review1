@@ -4,11 +4,20 @@ import java.util.ArrayList;
 
 public class WordPuzzleTest {
 
+  // @Test
+  // public void wordPuzzlerizer_acceptingInput_String() {
+  //   WordPuzzle wrdPzl = new WordPuzzle();
+  //   String expected = "word";
+  //   System.out.println("Accept input: " + expected);
+  //   assertEquals(expected, wrdPzl.wordPuzzlerizer("word"));
+  // }
+
   @Test
-  public void wordPuzzlerizer_acceptingInput_String() {
+  public void wordPuzzlerizer_inputStringToArray_Arraylist() {
     WordPuzzle wrdPzl = new WordPuzzle();
-    String expected = "word";
-    System.out.println("Accept input: " + expected);
+    ArrayList<String> expected = new ArrayList<String>();
+    expected.add("word");
+    System.out.println("ArrayString: " + expected);
     assertEquals(expected, wrdPzl.wordPuzzlerizer("word"));
   }
 }

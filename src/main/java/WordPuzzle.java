@@ -24,7 +24,7 @@ public class WordPuzzle {
       model.put("template", "templates/outputPage.vtl");
 
       String inputString = request.queryParams("inputValue");
-      String output = wordPuzzlerizer(inputString);
+      ArrayList<String> output = wordPuzzlerizer(inputString);
 
 
       model.put("output", output);
@@ -34,10 +34,12 @@ public class WordPuzzle {
   }
 
 
-  public static String wordPuzzlerizer(String inputString) {
+  public static ArrayList<String> wordPuzzlerizer(String inputString) {
     String toBePuzzle = inputString;
-    System.out.println("Accept input: " + toBePuzzle);
-    return toBePuzzle;
+    ArrayList<String> daStringerator = new ArrayList<String>();
+    daStringerator.add(toBePuzzle);
+    System.out.println("ArrayString: " + daStringerator);
+    return daStringerator;
   }
 }
 
