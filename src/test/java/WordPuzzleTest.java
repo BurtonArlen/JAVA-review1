@@ -6,9 +6,9 @@ public class WordPuzzleTest {
 
   @Test
   public void wordPuzzlerizer_acceptingInput_String() {
-    CoinCombinations coinCombo = new CoinCombinations();
-    Integer expected = 0;
-    expected = expected + 1;
-    // System.out.println(expected);
-    assertEquals(expected, coinCombo.changeMaker("1"));
+    WordPuzzle wrdPzl = new WordPuzzle();
+    String expected = "word";
+    System.out.println("Accept input: " + expected);
+    assertEquals(expected, wrdPzl.wordPuzzlerizer("word"));
   }
+}

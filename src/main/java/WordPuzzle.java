@@ -24,7 +24,7 @@ public class WordPuzzle {
       model.put("template", "templates/outputPage.vtl");
 
       String inputString = request.queryParams("inputValue");
-      String output = changeMaker(inputString);
+      String output = wordPuzzlerizer(inputString);
 
 
       model.put("output", output);
@@ -32,20 +32,20 @@ public class WordPuzzle {
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
   }
+
+
   public static String wordPuzzlerizer(String inputString) {
-    String toBePuzzle = inputString
-    Integer index = 0;
-
-    //some form of string split//
-
-    ArrayList<String> daStringerator = new ArrayList<String>();
-    ArrayList<char> getPrimative = new ArrayList<char>();
-    getPrimative.add(daStringerator.get(index));
-
-    String stringPuzzlated = "";
-
-    System.out.println(stringPuzzlated);
-
-    return stringPuzzlated;
+    String toBePuzzle = inputString;
+    System.out.println("Accept input: " + toBePuzzle);
+    return toBePuzzle;
   }
 }
+
+
+
+    // Integer index = 0;
+    // some form of string split
+    // ArrayList<String> daStringerator = new ArrayList<String>();
+    // ArrayList<char> getPrimative = new ArrayList<char>();
+    // getPrimative.add(daStringerator.get(index));
+    // String stringPuzzlated = "";
