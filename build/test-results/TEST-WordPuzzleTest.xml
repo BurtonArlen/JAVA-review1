@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="WordPuzzleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-04-22T16:49:43" hostname="epicodus-67.local" time="0.004">
+<testsuite name="WordPuzzleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-04-22T17:26:22" hostname="epicodus-67.local" time="0.002">
   <properties/>
-  <testcase name="wordPuzzlerizer_StringToSplit_Array" classname="WordPuzzleTest" time="0.004"/>
-  <system-out><![CDATA[ArrayStringSplit: [Ljava.lang.String;@1c77cc7
-ArrayStringSplit: [Ljava.lang.String;@37e6b7f
+  <testcase name="wordPuzzlerizer_SplitToLoopRemove_Array" classname="WordPuzzleTest" time="0.002"/>
+  <system-out><![CDATA[PreStringReplace: This, is a test to see words. Words without vowels.
+StringReplace: Th-s, -s - t-st t- s-- w-rds. W-rds w-th--t v-w-ls.
+StringReplace: Th-s, -s - t-st t- s-- w-rds. W-rds w-th--t v-w-ls.
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

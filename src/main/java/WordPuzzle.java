@@ -24,7 +24,7 @@ public class WordPuzzle {
       model.put("template", "templates/outputPage.vtl");
 
       String inputString = request.queryParams("inputValue");
-      String[] output = wordPuzzlerizer(inputString);
+      String output = wordPuzzlerizer(inputString);
 
 
       model.put("output", output);
@@ -34,22 +34,14 @@ public class WordPuzzle {
   }
 
 
-  public static String[] wordPuzzlerizer(String inputString) {
+  public static String wordPuzzlerizer(String inputString) {
     String toBePuzzle = inputString;
-    String[] daStringerator = toBePuzzle.split("(?!^)");
-    // ArrayList<String> daStringerator = new ArrayList<String>();
-    // daStringerator.add(toBePuzzle);
-    // daStringerator = daStringerator.split("(?!^)");
-    System.out.println("ArrayStringSplit: " + daStringerator);
-    return daStringerator;
+    String puzzle = toBePuzzle.replace('a','-');
+    puzzle = puzzle.replace('e','-');
+    puzzle = puzzle.replace('i','-');
+    puzzle = puzzle.replace('o','-');
+    puzzle = puzzle.replace('u','-');
+    System.out.println("StringReplace: " + puzzle);
+    return puzzle;
   }
 }
-
-
-
-    // Integer index = 0;
-    // some form of string split
-    // ArrayList<String> daStringerator = new ArrayList<String>();
-    // ArrayList<char> getPrimative = new ArrayList<char>();
-    // getPrimative.add(daStringerator.get(index));
-    // String stringPuzzlated = "";

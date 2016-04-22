@@ -1,2 +1,3 @@
-.ArrayStringSplit: [Ljava.lang.String;@1c77cc7
-.ArrayStringSplit: [Ljava.lang.String;@37e6b7f
+FPreStringReplace: This, is a test to see words. Words without vowels.
+CStringReplace: Th-s, -s - t-st t- s-- w-rds. W-rds w-th--t v-w-ls.
+CStringReplace: Th-s, -s - t-st t- s-- w-rds. W-rds w-th--t v-w-ls.
