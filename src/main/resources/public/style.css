@@ -23,7 +23,8 @@ body{
 
 .form-control{
   height: 60px;
-  font-size: 40px;
+  font-size: 14px;
+  line-height: 1.42857143;
 }
 
 .form-control:hover{

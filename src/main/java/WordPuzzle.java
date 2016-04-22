@@ -10,6 +10,7 @@ import static spark.Spark.*;
 import java.util.Random;
 
 public class WordPuzzle {
+
   public static void main(String[] args) {
     staticFileLocation("/public");
     String layout = "templates/layout.vtl";
@@ -27,13 +28,22 @@ public class WordPuzzle {
       String inputString = request.queryParams("THEPUZZLINATOR");
       String output = wordPuzzlerizer(inputString);
 
-
       model.put("output", output);
 
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
-  }
 
+    get("/WINNER", (request, reponse) -> {
+      Map<String, Object> model = new HashMap<String, Object>();
+      String answerInputString = request.queryParams("THEANSWERIZER");
+      String inputString = request.queryParams("THEPUZZLINATOR");
+      Boolean winCheck = wordAnswerizer(answerInputString, inputString);
+      if(winCheck == true){  model.put("winner", "templates/WINNER.vtl");  }
+      else { model.put("loser", "templates/LOSER.vtl"); }
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
+
+  }
 
   public static String wordPuzzlerizer(String inputString) {
     String toBePuzzle = inputString;
@@ -50,4 +60,17 @@ public class WordPuzzle {
     System.out.println("StringOut: " + puzzle);
     return puzzle;
   }
+
+  public static Boolean wordAnswerizer(String answerInputString, String inputString) {
+    String toCompare = inputString;
+    String toJudge = answerInputString;
+    Boolean resultCompare = false;
+    System.out.println("compare: " + toCompare);
+    System.out.println("judge: " + toJudge);
+    if(toCompare.equals(toJudge)){
+      resultCompare = true;
+    }
+    return resultCompare;
+  }
+
 }
