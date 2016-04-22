@@ -12,7 +12,9 @@ The code and records for this open source project can be found at https://github
 
 ## Known Bugs
 
-_{There are no known bugs as of 4.22.2016}_
+_{as of 4.22.2016}_
+_{no results check feature functions}_
+
 
 ## Support and contact details
 
