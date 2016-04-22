@@ -12,12 +12,20 @@ public class WordPuzzleTest {
   //   assertEquals(expected, wrdPzl.wordPuzzlerizer("word"));
   // }
 
+  // @Test
+  // public void wordPuzzlerizer_inputStringToArray_Arraylist() {
+  //   WordPuzzle wrdPzl = new WordPuzzle();
+  //   ArrayList<String> expected = new ArrayList<String>();
+  //   expected.add("word");
+  //   System.out.println("ArrayString: " + expected);
+  //   assertEquals(expected, wrdPzl.wordPuzzlerizer("word"));
+  // }
+
   @Test
-  public void wordPuzzlerizer_inputStringToArray_Arraylist() {
+  public void wordPuzzlerizer_StringToSplit_Array() {
     WordPuzzle wrdPzl = new WordPuzzle();
-    ArrayList<String> expected = new ArrayList<String>();
-    expected.add("word");
-    System.out.println("ArrayString: " + expected);
+    String[] expected = {"w","o","r","d"};
+    System.out.println("ArrayStringSplit: " + expected);
     assertEquals(expected, wrdPzl.wordPuzzlerizer("word"));
   }
 }
