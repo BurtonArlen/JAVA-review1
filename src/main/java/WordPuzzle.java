@@ -11,6 +11,7 @@ import java.util.Random;
 
 public class WordPuzzle {
   public static void main(String[] args) {
+    staticFileLocation("/public");
     String layout = "templates/layout.vtl";
 
     get("/", (request, response) -> {
@@ -23,7 +24,7 @@ public class WordPuzzle {
       Map<String, Object> model = new HashMap<String, Object>();
       model.put("template", "templates/outputPage.vtl");
 
-      String inputString = request.queryParams("inputValue");
+      String inputString = request.queryParams("THEPUZZLINATOR");
       String output = wordPuzzlerizer(inputString);
 
 
@@ -37,11 +38,16 @@ public class WordPuzzle {
   public static String wordPuzzlerizer(String inputString) {
     String toBePuzzle = inputString;
     String puzzle = toBePuzzle.replace('a','-');
+    puzzle = puzzle.replace('A','-');
     puzzle = puzzle.replace('e','-');
+    puzzle = puzzle.replace('E','-');
     puzzle = puzzle.replace('i','-');
+    puzzle = puzzle.replace('I','-');
     puzzle = puzzle.replace('o','-');
+    puzzle = puzzle.replace('O','-');
     puzzle = puzzle.replace('u','-');
-    System.out.println("StringReplace: " + puzzle);
+    puzzle = puzzle.replace('U','-');
+    System.out.println("StringOut: " + puzzle);
     return puzzle;
   }
 }

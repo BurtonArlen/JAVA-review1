@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 public class WordPuzzleTest {
 
-  // @Test
-  // public void wordPuzzlerizer_acceptingInput_String() {
-  //   WordPuzzle wrdPzl = new WordPuzzle();
-  //   String expected = "word";
-  //   System.out.println("Accept input: " + expected);
-  //   assertEquals(expected, wrdPzl.wordPuzzlerizer("word"));
-  // }
+  @Test
+  public void wordPuzzlerizer_acceptingInput_String() {
+    WordPuzzle wrdPzl = new WordPuzzle();
+    String expected = "why";
+    System.out.println("StringIn: " + expected);
+    assertEquals(expected, wrdPzl.wordPuzzlerizer("why"));
+  }
 
   // @Test
   // public void wordPuzzlerizer_inputStringToArray_Arraylist() {
@@ -30,11 +30,10 @@ public class WordPuzzleTest {
   // }
 
   @Test
-  public void wordPuzzlerizer_SplitToLoopRemove_Array() {
+  public void wordPuzzlerizer_RemoveVowel_String() {
     WordPuzzle wrdPzl = new WordPuzzle();
     String expected = "Th-s, -s - t-st t- s-- w-rds. W-rds w-th--t v-w-ls.";
-    System.out.println("PreStringReplace: This, is a test to see words. Words without vowels.");
-    System.out.println("StringReplace: " + expected);
+    System.out.println("StringIn: This, is a test to see words. Words without vowels.");
     assertEquals(expected, wrdPzl.wordPuzzlerizer("This, is a test to see words. Words without vowels."));
   }
 }

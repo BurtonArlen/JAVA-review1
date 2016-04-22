@@ -1,0 +1,33 @@
+body{
+  background-color: #D3B47F;
+  color: #ff4040;
+}
+.jumbotron{
+  background-color: #29B4FB;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 26px;
+  margin-top: 300px;
+  text-align: center;
+}
+
+.btn{
+  background-color: #b4fb29;
+  color: #000080;
+}
+
+.btn:hover{
+  background-color: #ab00a4;
+}
+
+.form-control{
+  height: 60px;
+  font-size: 40px;
+}
+
+.form-control:hover{
+  height: 60px;
+  background-color: #d6ff00;
+  color: #358dd6;
+}
